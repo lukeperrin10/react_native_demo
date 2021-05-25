@@ -2,9 +2,11 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 const SecondScreen = (props) => {
+  
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Hello {props.route.params.name}</Text>
+      <Text style={styles.header}>{props.route.params.title}</Text>
+      <Text>{props.route.params.teaser}</Text>
     </View>
   );
 };
@@ -21,4 +23,5 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 30,
   },
+
 });

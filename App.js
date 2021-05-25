@@ -7,7 +7,7 @@ import SecondScreen from './screens/SecondScreen';
 
 const Stack = createStackNavigator();
 const App = (props) => {
-  const name = 'Home';
+  const name = 'Fake ? News';
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -25,7 +25,7 @@ const App = (props) => {
             },
             headerRight: () => (
               <View>
-                <Text>Some Text</Text>
+                <Text>Welcome</Text>
               </View>
             ),
           })}
