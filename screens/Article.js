@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Image, Dimensions, TouchableOpacity } from 'rea
 
 const Article = ({ article, navigation }) => {
   return (
-    <TouchableOpacity
+    <TouchableOpacity testID={`article-${article.id}`}
     onPress={() => {
       navigation.navigate('Second Screen', {title: article.title, teaser: article.teaser})
     }}

@@ -5,7 +5,7 @@ const SecondScreen = (props) => {
   
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>{props.route.params.title}</Text>
+      <Text testID='title' style={styles.header}>{props.route.params.title}</Text>
       <Text>{props.route.params.teaser}</Text>
     </View>
   );
